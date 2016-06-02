@@ -14,6 +14,18 @@
 	$estado = $_POST["listEstados"];
 	$dtNasc = $_POST["txtData"];
 	$sexo = $_POST["sexo"];
+	if(isset($_POST["checkCinema"]))
+	$cinema = true;
+	else
+	$cinema = false;
+	if(isset($_POST["checkMusica"]))
+	$musica = true;
+	else
+	$musica = false;
+	if(isset($_POST["checkInfo"]))
+	$info = true;
+	else
+	$info = false;
 	$cinema = $_POST["checkCinema"];
 	$musica = $_POST["checkMusica"];
 	$info = $_POST["checkInfo"];
